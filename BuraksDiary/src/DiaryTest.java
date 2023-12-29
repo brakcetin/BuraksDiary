@@ -10,6 +10,7 @@ public class DiaryTest {
 		Food o = new OutsideFood();
 		HomemadeFood homemadeFood = (HomemadeFood) h;
 		OutsideFood outsideFood = (OutsideFood) o;
+		Game game = new Game();
 		
 		System.out.println("- Hey! What brings you out here? Hmm...");
 		waitASec();
@@ -28,32 +29,32 @@ public class DiaryTest {
 	            
 	            while(!correctAnswer) {
 	    			if(userAnswer == 4) {
-	    				System.out.println("- OOPSS!! My program, my rules! It must be 5. Try it again :)");
+	    				System.out.println("\n- OOPSS!! My program, my rules! It must be 5. Try it again :)");
 	    				System.out.printf("=> ");
 	    				userAnswer = scan.nextInt();
 	    				while(!correctAnswer) {
 	    					if(userAnswer == 5) {
-	    						System.out.println("- Don't believe everything you hear, the answer would be 4. Anyway... Let's move on!");
+	    						System.out.println("\n- Don't believe everything you hear, the answer would be 4. Anyway... Let's move on!");
 	    						correctAnswer = true;
 	    					}
 	    					else if(userAnswer == 4) {
-	    						System.out.println("- Well done for insisting on what's right. But, what if... I'm kidding. Let's move on!");
+	    						System.out.println("\n- Well done for insisting on what's right. But, what if... I'm kidding. Let's move on!");
 	    						correctAnswer = true;
 	    					}
 	    					else {
-	    						System.out.println("- Do you want me to refer you to MATH101?");
+	    						System.out.println("\n- Do you want me to refer you to MATH101? What's 2+2?");
 	    						System.out.printf("=> ");
 	    						userAnswer = scan.nextInt();
 	    					}
 	    				}
 	    			}else {
-	    				System.out.println("- Do you want me to refer you to MATH101?");
+	    				System.out.println("\n- Do you want me to refer you to MATH101? What's 2+2?");
 	    				System.out.printf("=> ");
 	    				userAnswer = scan.nextInt();
 	    			}
 	    		}
 	        } catch (NumberFormatException e) {
-	            System.out.println("- Invalid input. Please enter a valid number.");
+	            System.out.println("\n- Invalid input. Please enter a valid number.");
 	        }
 		}while(!correctAnswer);
 
@@ -63,7 +64,7 @@ public class DiaryTest {
 		do {
 			waitASec();
 			System.out.println("\n------------------------------------\n- Choose a question get to know me: ");
-			System.out.println("- Sleep\n- Game\n- Food\n- Entertaintment\n- Reading\n- Studying\n- Others\n- Quit ");
+			System.out.println("- Sleep\n- Game\n- Food\n- Workout\n- Reading\n- Studying\n- Others\n- Quit ");
 			System.out.printf("=> ");
 			String question= scan.next().toLowerCase();	//converting to lower case to avoid errors;
 			switch(question) {
@@ -77,6 +78,7 @@ public class DiaryTest {
 					sleep.sleepList();
 					break;
 				case "game":
+					game.december17();
 					break;
 				case "food":
 					outsideFood.december12();
@@ -107,7 +109,7 @@ public class DiaryTest {
 							System.out.println("\n- I don't think that's an answer, sweetheart.");
 					}
 					break;
-				case "entertaintment":
+				case "workout":
 					break;
 				case "reading":
 					break;
@@ -116,7 +118,7 @@ public class DiaryTest {
 				case "others":
 					break;
 				case "quit":
-					break;
+					return;
 				default:
 					System.out.println("- Please choose (write) one of the options");
 			}
@@ -125,7 +127,7 @@ public class DiaryTest {
 	
 	public static void waitASec() {
 		try {
-            Thread.sleep(1500); // 2000 milliseconds = 2 seconds
+            Thread.sleep(1500); // 1500 milliseconds = 1.5 seconds
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
