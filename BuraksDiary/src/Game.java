@@ -57,7 +57,7 @@ public class Game extends Entertaintment implements IDecember17{
 		}
 		System.out.printf("\n- I have not played games for a long time. I only played %s for %s at %s on my phone on December 17th and sometimes I play chess. "
 				+ "\n  However, if you ask me what is my favourite game in general, my answer is definitely Europa Universalis IV. It is a perfect starategy game. What kind of games do you play?"
-				+ "\n1. Strategy\n2. FPS\n3. Survival\n4. Others", getActivityName(), getDuration(), getTime());
+				+ "\n1. Strategy\n2. FPS\n3. Survival\n4. Others\n", getActivityName(), getDuration(), getTime());
 
 		setAnswerCheck(false);
 		while(!isAnswerCheck()) {

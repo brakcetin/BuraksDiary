@@ -11,6 +11,7 @@ public class DiaryTest {
 		HomemadeFood homemadeFood = (HomemadeFood) h;
 		OutsideFood outsideFood = (OutsideFood) o;
 		Game game = new Game();
+		Reading read = new Reading();
 		
 		System.out.println("- Hey! What brings you out here? Hmm...");
 		waitASec();
@@ -112,6 +113,9 @@ public class DiaryTest {
 				case "workout":
 					break;
 				case "reading":
+					read.december13();
+					waitASec();
+					read.readingList();
 					break;
 				case "studying":
 					break;
