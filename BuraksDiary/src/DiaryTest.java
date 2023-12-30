@@ -5,6 +5,9 @@ public class DiaryTest {
 
 	public static void main(String[] args) {
 		
+		boolean answerCheck = false;
+		String answer;
+		
 		Sleep sleep = new Sleep();
 		Food h = new HomemadeFood();
 		Food o = new OutsideFood();
@@ -12,6 +15,7 @@ public class DiaryTest {
 		OutsideFood outsideFood = (OutsideFood) o;
 		Game game = new Game();
 		Reading read = new Reading();
+		Hangout hangout = new Hangout();
 		
 		System.out.println("- Hey! What brings you out here? Hmm...");
 		waitASec();
@@ -20,27 +24,26 @@ public class DiaryTest {
 		System.out.println("- Where do you want to start?");
 		waitASec();
 		System.out.println("- Oh, got it. What's 2+2?");
-		boolean correctAnswer = false;
 
 		do {
 			System.out.printf("=> ");
-			String input = scan.nextLine();
+			answer = scan.nextLine();
 			try {
-	            int userAnswer = Integer.parseInt(input);
+	            int userAnswer = Integer.parseInt(answer);
 	            
-	            while(!correctAnswer) {
+	            while(!answerCheck) {
 	    			if(userAnswer == 4) {
 	    				System.out.println("\n- OOPSS!! My program, my rules! It must be 5. Try it again :)");
 	    				System.out.printf("=> ");
 	    				userAnswer = scan.nextInt();
-	    				while(!correctAnswer) {
+	    				while(!answerCheck) {
 	    					if(userAnswer == 5) {
 	    						System.out.println("\n- Don't believe everything you hear, the answer would be 4. Anyway... Let's move on!");
-	    						correctAnswer = true;
+	    						answerCheck = true;
 	    					}
 	    					else if(userAnswer == 4) {
 	    						System.out.println("\n- Well done for insisting on what's right. But, what if... I'm kidding. Let's move on!");
-	    						correctAnswer = true;
+	    						answerCheck = true;
 	    					}
 	    					else {
 	    						System.out.println("\n- Do you want me to refer you to MATH101? What's 2+2?");
@@ -57,7 +60,7 @@ public class DiaryTest {
 	        } catch (NumberFormatException e) {
 	            System.out.println("\n- Invalid input. Please enter a valid number.");
 	        }
-		}while(!correctAnswer);
+		}while(!answerCheck);
 
 		waitASec();
 		System.out.println("\n- Stepping into Burak's Diary. Welcome aboard. Ahoy!");
@@ -67,8 +70,8 @@ public class DiaryTest {
 			System.out.println("\n------------------------------------\n- Choose a question get to know me: ");
 			System.out.println("- Sleep\n- Game\n- Food\n- Workout\n- Reading\n- Studying\n- Others\n- Quit ");
 			System.out.printf("=> ");
-			String question= scan.next().toLowerCase();	//converting to lower case to avoid errors;
-			switch(question) {
+			answer = scan.next().toLowerCase();	//converting to lower case to avoid errors;
+			switch(answer) {
 				case "sleep":
 					sleep.sleepInfo();
 					waitASec();
@@ -87,10 +90,10 @@ public class DiaryTest {
 					homemadeFood.december13();
 					waitASec();
 					System.out.println("\n- Do you wonder what I eat other days?\n- Yes\n- No");
-					boolean answerCheck = false;
+					answerCheck = false;
 					while(!answerCheck) {
 						System.out.printf("=> ");
-						String answer = scan.next();
+						answer = scan.next();
 						if(answer.equalsIgnoreCase("yes")) {
 							outsideFood.december14();
 							outsideFood.december15();
@@ -120,6 +123,30 @@ public class DiaryTest {
 				case "studying":
 					break;
 				case "others":
+					System.out.println("\n- If you want to know what I did for the rest of the day, type 1. If you want to see my whole diary, type 2"
+							+ "\n1. The rest of the day\n2. Burak's Diary");
+					answerCheck = false;
+					while(!answerCheck) {
+						System.out.printf("=> ");
+						answer = scan.next();
+						
+						try {
+							switch(answer) {
+							case "1":
+								hangout.december12();
+								answerCheck = true;
+								break;
+							case "2":
+								
+								answerCheck = true;
+								break;
+							default:
+								System.out.println("\n- Hey champ, can you choose a number from 1 or 2?");
+							}
+						}catch(NumberFormatException e) {
+							System.out.println("\n- Hey champ, can you choose a number from 1 or 2?");
+						}
+					}
 					break;
 				case "quit":
 					return;

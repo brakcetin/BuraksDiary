@@ -20,7 +20,7 @@ public class Reading extends Entertaintment implements IDecember13, IDecember17,
 					+ "\r\n"
 					+ "  A) It saw the salad dressing undressing.\r\n"
 					+ "  B) It heard the vegetable gossip.\r\n"
-					+ "  C) It wanted to ketchup on the latest news.\r\n"
+					+ "  C) It wanted to be ketchup on the latest news.\r\n"
 					+ "  D) It realized it was in a jam.");
 			
 			setAnswerCheck(false);
@@ -30,11 +30,11 @@ public class Reading extends Entertaintment implements IDecember13, IDecember17,
 				
 				switch(getAnswer()) {
 				case "a":
-					System.out.println("\n- Nope, the answer is C) It wanted to ketchup on the latest news.\n");
+					System.out.println("\n- Nope, the answer is C) It wanted to be ketchup on the latest news.\n");
 					setAnswerCheck(true);
 					break;
 				case "b":
-					System.out.println("\n- Nope, the answer is C) It wanted to ketchup on the latest news.\n");
+					System.out.println("\n- Nope, the answer is C) It wanted to be ketchup on the latest news.\n");
 					setAnswerCheck(true);
 					break;
 				case "c":
@@ -42,7 +42,7 @@ public class Reading extends Entertaintment implements IDecember13, IDecember17,
 					setAnswerCheck(true);
 					break;
 				case "d":
-					System.out.println("\n- Nope, the answer is C) It wanted to ketchup on the latest news.\n");
+					System.out.println("\n- Nope, the answer is C) It wanted to be ketchup on the latest news.\n");
 					setAnswerCheck(true);
 					break;
 				default:
