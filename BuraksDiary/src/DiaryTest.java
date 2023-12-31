@@ -133,7 +133,7 @@ public class DiaryTest {
 						try {
 							switch(answer) {
 							case "1":
-								hangout.december12();
+								hangout.december12();	//one function which contains december13, december14, december15, december16, december17 and december19
 								answerCheck = true;
 								break;
 							case "2":
