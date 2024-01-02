@@ -53,7 +53,7 @@ public class Workout implements IDecember16, IDecember17{
 				+ "  3. 4-7 days a week\r\n"
 				+ "  4. Wait, is this about food?");
 		
-		answerCheck = false;;
+		answerCheck = false;
 		while(!answerCheck) {
 			try {
 				System.out.printf("=> ");

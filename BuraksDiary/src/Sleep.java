@@ -72,8 +72,9 @@ public class Sleep implements IDecember12, IDecember13, IDecember14, IDecember15
 						System.out.println("\n- I don't think that's an answer, sweetheart.");
 				}
 			}
-			else
+			else {
 				System.out.println("\n- I don't think that's an answer, sweetheart.");
+			}
 		}
 		System.out.println("\n- Let me talk a little bit about my own sleep patterns. "
 				+ "I usually go to bed at 1:00 a.m. and get up at 7:00 a.m. However, it is not possible for every day.");

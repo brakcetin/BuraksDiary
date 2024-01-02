@@ -137,17 +137,17 @@ public class Hangout extends Entertaintment implements IDecember12, IDecember13,
 						setAnswerCheck(true);
 						break;
 					case "b":
-						System.out.println("\n- Answer is C.\n  Every day, a fresh nugget of wisdom! "
+						System.out.println("\n- Answer is A.\n  Every day, a fresh nugget of wisdom! "
 								+ "\n\n- I know you're bored. Don't worry, we're almost there. Just be a little more patient.;)");
 						setAnswerCheck(true);
 						break;
 					case "c":
-						System.out.println("\n- Answer is C.\n  Every day, a fresh nugget of wisdom! "
+						System.out.println("\n- Answer is A.\n  Every day, a fresh nugget of wisdom! "
 								+ "\n\n- I know you're bored. Don't worry, we're almost there. Just be a little more patient.;)");
 						setAnswerCheck(true);
 						break;
 					case "d":
-						System.out.println("\n- Answer is C.\n  Every day, a fresh nugget of wisdom! "
+						System.out.println("\n- Answer is A.\n  Every day, a fresh nugget of wisdom! "
 								+ "\n\n- I know you're bored. Don't worry, we're almost there. Just be a little more patient.;)");
 						setAnswerCheck(true);
 						break;

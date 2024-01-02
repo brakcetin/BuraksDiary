@@ -17,6 +17,7 @@ public class DiaryTest {
 		Reading read = new Reading();
 		Hangout hangout = new Hangout();
 		Workout workout = new Workout();
+		TheDiary diary = new TheDiary();
 		
 		System.out.println("- Hey! What brings you out here? Hmm...");
 		waitASec();
@@ -68,8 +69,8 @@ public class DiaryTest {
 		
 		do {
 			waitASec();
-			System.out.println("\n------------------------------------\n- Choose a question get to know me: ");
-			System.out.println("- Sleep\n- Game\n- Food\n- Workout\n- Reading\n- Studying\n- Others\n- Quit ");
+			System.out.println("\n------------------------------------\n- Choose a question get to know me: \r\n");
+			System.out.println("- Sleep\n- Game\n- Food\n- Workout\n- Reading\n- Others\n- Quit ");
 			System.out.printf("=> ");
 			answer = scan.next().toLowerCase();	//converting to lower case to avoid errors;
 			switch(answer) {
@@ -125,8 +126,6 @@ public class DiaryTest {
 					waitASec();
 					read.readingList();
 					break;
-				case "studying":
-					break;
 				case "others":
 					System.out.println("\n- If you want to know what I did for the rest of the day, type 1. If you want to see my whole diary, type 2"
 							+ "\n1. The rest of the day\n2. Burak's Diary");
@@ -142,7 +141,7 @@ public class DiaryTest {
 								answerCheck = true;
 								break;
 							case "2":
-								
+								diary.chooseLanguage();
 								answerCheck = true;
 								break;
 							default:

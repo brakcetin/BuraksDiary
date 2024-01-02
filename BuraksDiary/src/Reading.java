@@ -3,7 +3,7 @@ public class Reading extends Entertaintment implements IDecember13, IDecember17,
 	
 	@Override
 	public void december13() {
-		setActivityName("Harry Potter and the Philosopher's Stone (English version)");
+		setActivityName("Harry Potter and the Philosopher's Stone");
 		setDuration("1 hour");
 		setTime("00.00");
 		System.out.println("\n------------------------------------------------------------------------");
