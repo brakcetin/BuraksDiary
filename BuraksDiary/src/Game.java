@@ -16,7 +16,7 @@ public class Game extends Entertaintment implements IDecember17{
 		//repeated visits
 		if(getEntertaintmentCounter() == 2 || getEntertaintmentCounter() >=4) {
 			System.out.println("\n- Ah, déjà vu! You've asked this question before. Enough with the game talk. Tell me, when was the last time you read a book?");
-			System.out.println("\n1. 1 day befor\n2. 2-3 days before\n3. 1 week before\n4. More than a month");
+			System.out.println("\n1. 1 day before\n2. 2-3 days before\n3. 1 week before\n4. More than a month");
 			
 			setAnswerCheck(false);
 			while(!isAnswerCheck()) {
@@ -77,7 +77,8 @@ public class Game extends Entertaintment implements IDecember17{
 					break;
 				case "2":
 					System.out.println("\n- I never had much interest in FPS games for some reason. Valorant and CS:GO are some of the most popular ones. "
-							+ "\n  I also notice that The Finals is popular lately. If you chose this option, considering that a large percentage of gamers are into FPS games, you probably know more about it than I do.");
+							+ "\n  I also notice that The Finals is popular lately. If you chose this option, considering that a large percentage of gamers are into FPS games, \r\n"
+							+ "you probably know more about it than I do.");
 					setAnswerCheck(true);
 					break;
 				case "3":

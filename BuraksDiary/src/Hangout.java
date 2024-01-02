@@ -113,7 +113,7 @@ public class Hangout extends Entertaintment implements IDecember12, IDecember13,
 				+ "\n  I met my girlfriend and went to the library and studied Data Structures. After the library, we sat in Caribou cafe. "
 				+ "\n  After drinking our tea, we walked around Kızılay for a while and went back home.");
 		
-		System.out.println("\n-  Honestly, are you bored hearing about what I've been doing?\n- Yes\n- No");
+		System.out.println("\n- Honestly, are you bored hearing about what I've been doing?\n- Yes\n- No");
 		setAnswerCheck(false);
 		while(!isAnswerCheck()) {
 			System.out.printf("=> ");

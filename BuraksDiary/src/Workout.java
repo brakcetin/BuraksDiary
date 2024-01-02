@@ -44,10 +44,10 @@ public class Workout implements IDecember16, IDecember17{
 		
 		//repeated visits
 		if(workoutCounter >=2)
-			System.out.println("\r\n- Exercise is the key to health. Your repeated visits here really meant a lot to me. You're making me feel like a digital cheerleader here!\r\n"
-					+ "  You're not just a visitor; you're the reigning champ in my heart.");
+			System.out.println("- Exercise is the key to health. Your repeated visits here really meant a lot to me. You're making me feel like a digital cheerleader here!\r\n"
+					+ "  You're not just a visitor; you're the reigning champ in my heart.\r\n");
 		
-		System.out.println("\n- Hey, the sports fan! Welcome aboard. It's nice to see you here. How often do you work out?\r\n"
+		System.out.println("- Hey, the sports fan! Welcome aboard. It's nice to see you here. How often do you work out?\r\n"
 				+ "  1. 1-2 days a week\r\n"
 				+ "  2. 3-4 days a week\r\n"
 				+ "  3. 4-7 days a week\r\n"

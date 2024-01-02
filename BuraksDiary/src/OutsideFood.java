@@ -15,11 +15,11 @@ public class OutsideFood extends Food implements IDecember12, IDecember14, IDece
 		if(getFoodCounter() >= 2) {
 			System.out.println("\n- Ah, déjà vu! You've asked this question before. Seems like you're curious about my food preferences. Well, there are a lot of choices, and you're right. So, I'm saying hi to you with a quote.");
 			System.out.println("- Life is uncertain. Eat dessert first.\"\r\n"
-					+ "\t― Ernestine Ulmer");
+					+ "\t― Ernestine Ulmer\r\n");
 		}
 		
-		System.out.println("\n- Do you like sushi? I like it a lot. I had sushi today (December 12) at 5:00 p.m. But I didn't like it this time, it tasted worse and they reduced the size. "
-				+ "\nDid I tell you that I had a cheese omelet almost every morning?");
+		System.out.println("- Do you like sushi? I like it a lot. I had sushi today (December 12) at 5:00 p.m. But I didn't like it this time, it tasted worse and they reduced the size. \r\n"
+				+ "\r\n- Did I tell you that I had a cheese omelet almost every morning?");
 		System.out.println("- Yes\n- No");
 		while(!answerCheck) {
 			System.out.printf("=> ");

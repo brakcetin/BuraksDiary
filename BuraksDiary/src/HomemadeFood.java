@@ -16,16 +16,16 @@ public class HomemadeFood extends Food implements IDecember13, IDecember16, IDec
 			setAnswer(scan.next());
 			try {
 				if(getAnswer().equalsIgnoreCase("1")) {
-					System.out.println("\n- I love soup, especially lentil soup. Here is the recipe: ");
+					System.out.println("\r\n- I love soup, especially lentil soup. Here is the recipe: \r\n");
 					System.out.println("- Pour vegetable oil into the pot for red lentil soup and sauté the finely chopped onions until they turn slightly pink.\r\n"
-							+ "Then, add flour and continue sautéing over low heat.\r\n"
-							+ "If using tomato paste, add it, and after sautéing, add diced carrots and well-rinsed lentils.\r\n"
-							+ "Add water, mix well, and cover the pot. Let the soup simmer over medium heat until it boils, then, once boiling, stir occasionally and simmer over low heat until the lentils and carrots soften.\r\n"
-							+ "After the soup is cooked, blend it well with a hand blender. If you don't have a blender, you can also use a sieve.\r\n"
-							+ "Add black pepper, salt, and optionally cumin, and stir. Cook for an additional 5 minutes, then remove from the heat.\r\n"
-							+ "If the consistency seems too thick, add some water and bring it to a boil.\r\n"
-							+ "Meanwhile, take two tablespoons of butter in a small pan, heat it, add a teaspoon of red pepper flakes, and remove from the heat.\r\n"
-							+ "After transferring the lentil soup to serving bowls, drizzle the red pepper sauce over it and serve with a slice of lemon.");
+							+ "  Then, add flour and continue sautéing over low heat.\r\n"
+							+ "  If using tomato paste, add it, and after sautéing, add diced carrots and well-rinsed lentils.\r\n"
+							+ "  Add water, mix well, and cover the pot. Let the soup simmer over medium heat until it boils, then, once boiling, stir occasionally and simmer over low heat until the lentils and carrots soften.\r\n"
+							+ "  After the soup is cooked, blend it well with a hand blender. If you don't have a blender, you can also use a sieve.\r\n"
+							+ "  Add black pepper, salt, and optionally cumin, and stir. Cook for an additional 5 minutes, then remove from the heat.\r\n"
+							+ "  If the consistency seems too thick, add some water and bring it to a boil.\r\n"
+							+ "  Meanwhile, take two tablespoons of butter in a small pan, heat it, add a teaspoon of red pepper flakes, and remove from the heat.\r\n"
+							+ "  After transferring the lentil soup to serving bowls, drizzle the red pepper sauce over it and serve with a slice of lemon.");
 					answerCheck = true;
 				}
 				else if(getAnswer().equalsIgnoreCase("2")) {
@@ -62,16 +62,17 @@ public class HomemadeFood extends Food implements IDecember13, IDecember16, IDec
 						setAnswer(scan.next());
 						if(getAnswer().equalsIgnoreCase("1")) {
 							System.out.println("\n- Almost everything with chicken is really good — chicken over rice, chicken wraps, grilled chicken, schnitzel, you name it. What's your favorite? "
-									+ "My favorite is chicken over rice. Here, have the recipe!");
-							System.out.println("Melt butter and vegetable oil in a pot. Washed chicken drumsticks are seared on both sides. Add hot water, salt, and whole black peppercorns, and let it come to a boil. Cook over medium heat until softened.\r\n"
-									+ "\r\n"
-									+ "Rinse the rice and soak it in lukewarm water. Add a teaspoon of salt with the tip of a teaspoon. Let it sit like this for 30 minutes. Take butter and vegetable oil into a suitable pot and melt.\r\n"
-									+ "\r\n"
-									+ "Drained and washed rice is added to the pot and sautéed over low heat for 4-5 minutes. This way, it will be fluffy. Strain the chicken broth and pour it over the rice.\r\n"
-									+ "\r\n"
-									+ "Add salt and let it come to a boil. When it boils, cover it and cook over low heat until the water is absorbed. (10-15 minutes) After that, do not open the lid and let it steep. Gently stir before serving.\r\n"
-									+ "\r\n"
-									+ "The softened chicken drumsticks are separated into large pieces. Add some vegetable oil to a pan. Transfer the chicken pieces. Sprinkle with spices. Fry by turning them. Serve hot on top of the pilaf. Enjoy your meal!");
+									+ "\r\nMy favorite is chicken over rice. Here, have the recipe!\r\n");
+							System.out.println("  -> Melt butter and vegetable oil in a pot. Washed chicken drumsticks are seared on both sides. Add hot water, salt, and whole black peppercorns, \r\n"
+									+ "  and let it come to a boil. Cook over medium heat until softened.\r\n"
+									+ "  -> Rinse the rice and soak it in lukewarm water. Add a teaspoon of salt with the tip of a teaspoon. Let it sit like this for 30 minutes. Take butter \r\n"
+									+ "  and vegetable oil into a suitable pot and melt.\r\n"
+									+ "  -> Drained and washed rice is added to the pot and sautéed over low heat for 4-5 minutes. This way, it will be fluffy. Strain the chicken broth and \r\n"
+									+ "  pour it over the rice.\r\n"
+									+ "  -> Add salt and let it come to a boil. When it boils, cover it and cook over low heat until the water is absorbed. (10-15 minutes) After that, do not \r\n"
+									+ "  open the lid and let it steep. Gently stir before serving.\r\n"
+									+ "  -> The softened chicken drumsticks are separated into large pieces. Add some vegetable oil to a pan. Transfer the chicken pieces. Sprinkle with spices. \r\n"
+									+ "  Fry by turning them. Serve hot on top of the pilaf. Enjoy your meal!");
 							answerCheck = true;
 						}
 						else if(getAnswer().equalsIgnoreCase("2")) {
@@ -100,19 +101,16 @@ public class HomemadeFood extends Food implements IDecember13, IDecember16, IDec
 						if(getAnswer().equalsIgnoreCase("1")) {
 							System.out.println("\n- Welcome to the team of desserts with syrup. Just be cautious not to cause a sweet emergency, but I suggest trying şöbiyet dessert.");
 							answerCheck = true;
-						}
-						else if(getAnswer().equalsIgnoreCase("2")) {
+						}else if(getAnswer().equalsIgnoreCase("2")) {
 								System.out.println("\n- Welcome to the team of milky desserts. My advice for you is to definitely try trileçe dessert. Not everyone loves it, but I can finish a whole tray.");
 								answerCheck = true;
-						}
-						else
+						}else
 							System.out.println("\n- Hey champ, can you choose a number from 1, 2, 3, or 4?");
-						System.out.println("\n- If you expect me to share a dessert recipe with you, you're mistaken. \nI attempted making American cookies once, didn't quite succeed, but I assure you, the next batch of cookies will be perfect.");
 					}
-				}
-				
-				else
+				}else
 					System.out.println("\n- Hey champ, can you choose a number from 1, 2, 3, or 4?");
+				System.out.println("\n- If you expect me to share a dessert recipe with you, you're mistaken. \r\n"
+						+ "  I attempted making chocolate chip cookies once, didn't quite succeed, but I assure you, the next batch of cookies will be perfect.");
 			}catch (NumberFormatException e) {
 	            System.out.println("\n- Hey champ, can you choose a number from 1, 2, 3, or 4?");
 	        }

@@ -41,7 +41,7 @@ public class Sleep implements IDecember12, IDecember13, IDecember14, IDecember15
 		if(sleepCounter >= 2) {
 			System.out.println("\n- Ah, déjà vu! You've asked this question before. I'm touched that you're really curious about my sleeping patterns.");
 			System.out.println("- Here a word of wisdom:\n\t\"Quit being so hard on yourself. We are what we are; we love what we love. We don't need to justify it to anyone... not even to ourselves.\"\r\n"
-					+ "\t― Scott Lynch, The Republic of Thieves");
+					+ "\t― Scott Lynch, The Republic of Thieves\r\n");
 		}
 		System.out.println("- To be honest, I don't have a very regular sleep schedule. Do you?\n- Yes\n- No");
 		boolean answerCheck = false;

@@ -47,7 +47,7 @@ public class TheDiary {
 					answerCheck = true;
 					break;
 				default:
-					System.out.println("- Type \"tr\" for Turkish and \"en\" for English!");
+					System.out.println("\r\n- Type \"tr\" for Turkish and \"en\" for English!");
 				}
 		}
 	}
