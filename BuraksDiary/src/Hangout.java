@@ -10,6 +10,8 @@ public class Hangout extends Entertaintment implements IDecember12, IDecember13,
 	public void december12() {
 		System.out.println("\n------------------------------------------------------------------------");
 		setEntertaintmentCounter(getEntertaintmentCounter()+1);
+		
+		//repeated visits
 		if(getEntertaintmentCounter() == 2) {
 			System.out.println("- Quick, spill the beans, whose secret agent are you? You've got to pass the security test to proceed. What book am I reading right now?"
 					+ "\n  A. Sherlock Holmes"
@@ -48,6 +50,7 @@ public class Hangout extends Entertaintment implements IDecember12, IDecember13,
 			}
 		}
 		
+		//repeated visits
 		if(getEntertaintmentCounter() >= 3)
 			System.out.println("- Oh, it's you again! Hello. Hope you're doing well.\n");
 		

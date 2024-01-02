@@ -13,6 +13,7 @@ public class Game extends Entertaintment implements IDecember17{
 		setTime("21.30");
 		System.out.println("\n------------------------------------------------------------------------");
 		setEntertaintmentCounter(getEntertaintmentCounter()+1);
+		//repeated visits
 		if(getEntertaintmentCounter() == 2 || getEntertaintmentCounter() >=4) {
 			System.out.println("\n- Ah, déjà vu! You've asked this question before. Enough with the game talk. Tell me, when was the last time you read a book?");
 			System.out.println("\n1. 1 day befor\n2. 2-3 days before\n3. 1 week before\n4. More than a month");
@@ -51,6 +52,8 @@ public class Game extends Entertaintment implements IDecember17{
 			}
 			
 		}
+		
+		//repeated visits
 		if(getEntertaintmentCounter() == 3) {
 			System.out.println("\n- Are you still here? Come on, let's go outside. Look, there are plenty of options to get to know me better.");
 			return;

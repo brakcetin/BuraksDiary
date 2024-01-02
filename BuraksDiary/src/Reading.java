@@ -9,10 +9,12 @@ public class Reading extends Entertaintment implements IDecember13, IDecember17,
 		System.out.println("\n------------------------------------------------------------------------");
 		setEntertaintmentCounter(getEntertaintmentCounter()+1);
 		
+		//repeated visits
 		if(getEntertaintmentCounter() == 2 || getEntertaintmentCounter() >=4) {
 			System.out.println("- Hey, it's you again! our interest in books has really impressed me. I've got a surprise for you on your next visit!\n");
 		}
 		
+		//repeated visits
 		if(getEntertaintmentCounter() == 3) {
 			System.out.println("-  So, you couldn't resist the curiosity and rushed here to find out what my surprise is. You're quite the curious one!"
 					+ "\n  Get ready for a brain teaser! I've crafted a question so nice, even your brain cells will high-five each other. Easy peasy, though!"

@@ -16,6 +16,7 @@ public class DiaryTest {
 		Game game = new Game();
 		Reading read = new Reading();
 		Hangout hangout = new Hangout();
+		Workout workout = new Workout();
 		
 		System.out.println("- Hey! What brings you out here? Hmm...");
 		waitASec();
@@ -113,7 +114,11 @@ public class DiaryTest {
 							System.out.println("\n- I don't think that's an answer, sweetheart.");
 					}
 					break;
+					
 				case "workout":
+					workout.december16();
+					waitASec();
+					workout.december17();
 					break;
 				case "reading":
 					read.december13();
