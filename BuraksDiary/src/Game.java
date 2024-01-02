@@ -15,7 +15,7 @@ public class Game extends Entertaintment implements IDecember17{
 		setEntertaintmentCounter(getEntertaintmentCounter()+1);
 		//repeated visits
 		if(getEntertaintmentCounter() == 2 || getEntertaintmentCounter() >=4) {
-			System.out.println("\n- Ah, déjà vu! You've asked this question before. Enough with the game talk. Tell me, when was the last time you read a book?");
+			System.out.println("- Ah, déjà vu! You've asked this question before. Enough with the game talk. Tell me, when was the last time you read a book?");
 			System.out.println("\n1. 1 day before\n2. 2-3 days before\n3. 1 week before\n4. More than a month");
 			
 			setAnswerCheck(false);
@@ -26,20 +26,20 @@ public class Game extends Entertaintment implements IDecember17{
 				try {
 					switch(getAnswer()) {
 					case "1":
-						System.out.println("\n- Nice, you must be a regular bookworm. Lately, I've been struggling to read consistently.");
+						System.out.println("\n- Nice, you must be a regular bookworm. Lately, I've been struggling to read consistently.\r\n");
 						setAnswerCheck(true);
 						break;
 					case "2":
-						System.out.println("\n- You're one of us. Not bad at all. Keep reading regularly.");
+						System.out.println("\n- You're one of us. Not bad at all. Keep reading regularly.\r\n");
 						setAnswerCheck(true);
 						break;
 					case "3":
-						System.out.println("\n- Urgent Reminder: You've forgotten the joy of reading! Your neglected book is sitting on the shelf, feeling a bit sad, waiting for you to read it.");
+						System.out.println("\n- Urgent Reminder: You've forgotten the joy of reading! Your neglected book is sitting on the shelf, feeling a bit sad, waiting for you to read it.\r\n");
 						setAnswerCheck(true);
 						break;
 					case "4":
 						System.out.println("\n- Hey! Wake up! I've got this figured out. Before you know it, you'll either have read one book a year or none at all. "
-								+ "\n  Do you want to be just average, or do you want to be a bit different from the rest?");
+								+ "\n  Do you want to be just average, or do you want to be a bit different from the rest?\r\n");
 						setAnswerCheck(true);
 						break;
 					default:
@@ -55,10 +55,10 @@ public class Game extends Entertaintment implements IDecember17{
 		
 		//repeated visits
 		if(getEntertaintmentCounter() == 3) {
-			System.out.println("\n- Are you still here? Come on, let's go outside. Look, there are plenty of options to get to know me better.");
+			System.out.println("- Are you still here? Come on, let's go outside. Look, there are plenty of options to get to know me better.\r\n");
 			return;
 		}
-		System.out.printf("\n- I have not played games for a long time. I only played %s for %s at %s on my phone on December 17th and sometimes I play chess. "
+		System.out.printf("- I have not played games for a long time. I only played %s for %s at %s on my phone on December 17th and sometimes I play chess. "
 				+ "\n  However, if you ask me what is my favourite game in general, my answer is definitely Europa Universalis IV. It is a perfect starategy game. "
 				+ "\n  What kind of games do you play?"
 				+ "\n1. Strategy\n2. FPS\n3. Survival\n4. Others\n", getActivityName(), getDuration(), getTime());

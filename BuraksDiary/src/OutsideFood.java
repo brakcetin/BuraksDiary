@@ -13,8 +13,8 @@ public class OutsideFood extends Food implements IDecember12, IDecember14, IDece
 		System.out.println("\n------------------------------------------------------------------------");
 		getFoodCounter();
 		if(getFoodCounter() >= 2) {
-			System.out.println("\n- Ah, déjà vu! You've asked this question before. Seems like you're curious about my food preferences. Well, there are a lot of choices, and you're right. So, I'm saying hi to you with a quote.");
-			System.out.println("- Life is uncertain. Eat dessert first.\"\r\n"
+			System.out.println("- Ah, déjà vu! You've asked this question before. Seems like you're curious about my food preferences. Well, there are a lot of choices, and you're right. So, I'm saying hi to you with a quote.");
+			System.out.println("\t\"Life is uncertain. Eat dessert first.\"\r\n"
 					+ "\t― Ernestine Ulmer\r\n");
 		}
 		

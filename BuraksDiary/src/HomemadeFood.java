@@ -105,12 +105,13 @@ public class HomemadeFood extends Food implements IDecember13, IDecember16, IDec
 								System.out.println("\n- Welcome to the team of milky desserts. My advice for you is to definitely try trileçe dessert. Not everyone loves it, but I can finish a whole tray.");
 								answerCheck = true;
 						}else
-							System.out.println("\n- Hey champ, can you choose a number from 1, 2, 3, or 4?");
+							System.out.println("\n- Hey champ, can you choose a number from 1, or 2?");
 					}
+					System.out.println("\n- If you expect me to share a dessert recipe with you, you're mistaken. \r\n"
+							+ "  I attempted making chocolate chip cookies once, didn't quite succeed, but I assure you, the next batch of cookies will be perfect.");
 				}else
-					System.out.println("\n- Hey champ, can you choose a number from 1, 2, 3, or 4?");
-				System.out.println("\n- If you expect me to share a dessert recipe with you, you're mistaken. \r\n"
-						+ "  I attempted making chocolate chip cookies once, didn't quite succeed, but I assure you, the next batch of cookies will be perfect.");
+					System.out.println("\n- Hey champ, can you choose a number from 1, 2, 3 or 4?");
+				
 			}catch (NumberFormatException e) {
 	            System.out.println("\n- Hey champ, can you choose a number from 1, 2, 3, or 4?");
 	        }
