@@ -10,7 +10,7 @@ public class Reading extends Entertaintment implements IDecember13, IDecember17,
 		setEntertaintmentCounter(getEntertaintmentCounter()+1);
 		
 		//repeated visits
-		if(getEntertaintmentCounter() == 2 || getEntertaintmentCounter() >=4) {
+		if(getEntertaintmentCounter() == 2) {
 			System.out.println("- Hey, it's you again! our interest in books has really impressed me. I've got a surprise for you on your next visit!\n");
 		}
 		
